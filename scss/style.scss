@@ -1,0 +1,23 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: $color-black!important;
+}
+
+footer {
+  background-color: $color-white;
+}
+
+.footer-div {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+main {
+  background-color: $color-black!important;
+}
