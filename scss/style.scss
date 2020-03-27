@@ -6,6 +6,8 @@
 
 a {
   color: $color-black!important;
+  text-decoration: none!important;
+  padding: 20px;
 }
 
 footer {
@@ -18,6 +20,41 @@ footer {
   margin: 20px;
 }
 
-main {
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.logo {
+  height: 150px;
+  width: 150px;
+}
+
+.logo-div {
+  text-align: center;
+}
+
+#music {
   background-color: $color-black!important;
+  height: 100vh;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+.nav-ul {
+  margin: auto 0;
+}
+
+.nav-ul ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: auto 0;
+  padding: 0;
+}
+
+.pic-div {
+  height: 100vh;
+  text-align: center;
+  padding: 50px;
 }
