@@ -12,13 +12,11 @@ a {
 
 footer {
   background-color: $color-white;
+  margin: 20px 0;
+  text-align: center;
 }
 
-.footer-div {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-}
+
 
 img {
   max-width: 100%;
@@ -38,6 +36,8 @@ img {
   height: 100vh;
 }
 
+nav {
+}
 .nav-link {
   font-size: 1.2rem;
 }
