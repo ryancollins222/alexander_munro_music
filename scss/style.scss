@@ -14,9 +14,22 @@ footer {
   background-color: $color-white;
   margin: 20px 0;
   text-align: center;
+  #email {
+    padding: 0 10px;
+    margin: 0 10px;;
+  }
+  form {
+    padding-bottom: 20px;
+    margin: 0 10px;
+  }
 }
 
-
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: $color-white;
+  z-index: 1;
+}
 
 img {
   max-width: 100%;
@@ -33,25 +46,31 @@ img {
 
 #music {
   background-color: $color-black!important;
-  height: 100vh;
+  padding-top: 150px;
 }
 
-nav {
-}
 .nav-link {
   font-size: 1.2rem;
 }
 .nav-ul {
   margin: auto 0;
+  padding: 0;
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+
+  }
 }
 
-.nav-ul ul{
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-  margin: auto 0;
-  padding: 0;
-}
+// .nav-ul ul{
+//   display: flex;
+//   justify-content: space-around;
+//   margin: auto 0;
+//   padding: 0;
+// }
 
 .pic-div {
   height: 100vh;

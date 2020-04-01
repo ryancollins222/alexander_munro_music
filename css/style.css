@@ -13,6 +13,21 @@ footer {
   margin: 20px 0;
   text-align: center;
 }
+footer #email {
+  padding: 0 10px;
+  margin: 0 10px;
+}
+footer form {
+  padding-bottom: 20px;
+  margin: 0 10px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
 
 img {
   max-width: 100%;
@@ -30,7 +45,7 @@ img {
 
 #music {
   background-color: black !important;
-  height: 100vh;
+  padding-top: 150px;
 }
 
 .nav-link {
@@ -39,13 +54,13 @@ img {
 
 .nav-ul {
   margin: auto 0;
+  padding: 0;
 }
-
 .nav-ul ul {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   list-style: none;
-  margin: auto 0;
+  text-align: center;
   padding: 0;
 }
 
