@@ -18,16 +18,16 @@
   <title>Alexander Munro</title>
 </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
       <!-- header -->
       <header>
         <nav>
           <div class="row header">
-            <div class="col nav-ul">
+            <div class="col nav-ul-div">
               <!-- navbar links -->
               <ul>
                 <li>
-                  <a href="#" class="nav-link">Music</a>
+                  <a href="#music" class="nav-link">Music</a>
                 </li>
                 <li>
                   <a href="#" class="nav-link">Store</a>
@@ -35,13 +35,13 @@
               </ul>
             </div>
             <div class="col">
-              <div class="logo-div">
+              <!-- <div class="logo-div"> -->
                 <a href="#">
                   <img src="imgs/logo.png" class="logo" alt="Alexander Munro Logo">
                 </a>
-              </div>
+              <!-- </div> -->
             </div>  
-            <div class="col nav-ul">
+            <div class="col nav-ul-div">
               <ul>
                 <li>
                   <a href="#" class="nav-link">Media</a>
@@ -56,23 +56,33 @@
       </header>
       <!-- main -->
       <main>
-        <div class="row" id="music">
+        <div class="row" id="title-page">
           <div class="col pic-div">
             <img src="imgs/munro-pic.jpg" alt="">
           </div>
         </div>
+        <div class="row" id="music">
+          <div class="col">
+            <h2>Music</h2>
+          </div>
+        </div>
+        <div class="flex-row">
+          <!-- <div class="bg-primary"><p>hellohellohellohello</p></div>
+          <div class="bg-warning"><p>hello</p></div>
+          <div><p>hello</p></div> -->
+        </div>
       </main>
-      <footer class="row">
+      <footer class="footer-flex-container">
         <!-- email form -->
-        <div class="col-md-6">
-          <form action="">
+        <div>
+          <form action="" class="flex-row">
             <label for="#email">Subscribe: </label>
             <input type="email" name="email" id="email" placeholder="name@email.com">
             <button type="submit">Submit</button>
           </form>
         </div>
         <!-- font awesome icons -->
-        <div class="col-md-6 ">
+        <div class="flex-row">
           <a href="https://www.youtube.com/playlist?list=OLAK5uy_ngn7zy66C1kPsvqZMO_7OC-q-kemIjkm4" target="blank">
             <i class="fab fa-youtube-square fa-2x mx-3"></i>
           </a>  

@@ -2,36 +2,71 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 a {
   color: black !important;
   text-decoration: none !important;
-  padding: 20px;
 }
 
-footer {
-  background-color: white;
-  margin: 20px 0;
+body {
+  background-color: black !important;
+}
+
+.flex-row {
+  display: flex;
   text-align: center;
-}
-footer #email {
-  padding: 0 10px;
-  margin: 0 10px;
-}
-footer form {
-  padding-bottom: 20px;
-  margin: 0 10px;
+  justify-content: space-around;
 }
 
-.header {
+.footer-flex-container {
+  background-color: white;
+  min-width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.footer-flex-container .flex-row {
+  padding: 10px 0;
+  justify-content: center;
+  flex-grow: 1;
+}
+.footer-flex-container #email {
+  margin: 0 10px;
+}
+@media (min-width: 768px) {
+  .footer-flex-container {
+    flex-direction: row;
+  }
+  .footer-flex-container div {
+    width: 50%;
+  }
+  .footer-flex-container .flex-row {
+    justify-content: center;
+    padding: 20px 0;
+  }
+}
+
+header {
   position: fixed;
-  width: 100%;
+  min-width: 100% !important;
   background-color: white;
   z-index: 1;
+  text-align: center;
 }
 
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+label {
+  margin: 0;
 }
 
 .logo {
@@ -43,25 +78,44 @@ img {
   text-align: center;
 }
 
+#title-page,
 #music {
-  background-color: black !important;
   padding-top: 150px;
+  min-height: 100vh;
+}
+
+main {
+  color: white;
+}
+
+#music {
+  text-align: center;
 }
 
 .nav-link {
   font-size: 1.2rem;
+  padding: 5px 0;
+  text-align: center;
 }
 
-.nav-ul {
+.nav-ul-div {
   margin: auto 0;
   padding: 0;
 }
-.nav-ul ul {
+.nav-ul-div ul {
   display: flex;
   flex-direction: column;
   list-style: none;
   text-align: center;
   padding: 0;
+}
+@media (min-width: 768px) {
+  .nav-ul-div ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+  }
 }
 
 .pic-div {
